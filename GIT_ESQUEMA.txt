@@ -1,0 +1,5 @@
+1 - git init 
+2 - git add .
+3 - git commit -m 'MUDOU'
+4 - git push origin master
+5 - git push origin master --force (Se der merda)

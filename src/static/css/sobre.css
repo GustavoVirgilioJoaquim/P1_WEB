@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 35vh;
+}
+
+#line-1{
+    color: #222;
+}
+
+#line-2{
+    color: #222;
+}
+
+#line-3{
+    color: #222;
+}
+
+#name{
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#name:hover{
+    color: #7209B7;
+}
+
+#country{
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#country:hover{
+    color: #007f5f;
+}
