@@ -19,4 +19,9 @@ app.get('/trabalhos', (request, response) => {
 app.get('/contatos', (request, response) => {
     response.sendFile(__dirname + '/static/html/contatos.html')
 })
+
+app.get('/quiz', (request, response) => {
+    response.sendFile(__dirname + '/static/html/trabalhos/quiz.html')
+})
+
 app.listen(port)

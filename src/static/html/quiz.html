@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guvi. Quiz</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/trabalhos/quiz.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header class="top-bar">
+            <div class="menu">
+                <!-- <button id="sobre" class="button-children" onclick="login()">Voltar</button> -->
+            </div>
+            <div class="logo">
+                <span id="nome-logo">Guvi. </span><span id="nome-trabalho">Quiz</span>
+            </div>
+        </header>
+        <div class="content">
+            <div class="card-question">
+                <div class="top-card">
+                    <div class="number-question">
+                        <p id="number">1</p>
+                    </div>
+                </div>
+                <div class="text-question">
+                    <span id="text">Qual é o melhor jogador que passou pelo time do Verdão?</span>
+                </div>
+                <div class="questions">
+                    <div class="answer">
+                        <button class="choice" id="q1">Dudu</button>
+                    </div> 
+                </div>
+                <div class="questions">
+                    <div class="answer">
+                        <button class="choice" id="q2">Ademir</button>
+                    </div>
+                </div>
+                <div class="questions">
+                    <div class="answer">
+                        <button class="choice" id="q3">Juninho</button>
+                    </div>
+                </div>
+                <div class="questions">
+                    <div class="answer">
+                        <button class="choice" id="q4">Luan</button>
+                    </div>           
+                </div>    
+                <div class="button">
+                    <button id="button-next" onclick="avancar()">Avançar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("q2").onclick = function (){
+        alert("Correto!")
+    }
+    function avancar(){
+        if(localStorage.getItem("ctPerguntas") == 2){
+            document.getElementById("number").innerText = 2
+            document.getElementById("text").innerText = "Quem ganhou a copa de 1954?"
+            document.getElementById("q1").innerText = "Argentina"
+            document.getElementById("q2").innerText = "Hungria"
+            document.getElementById("q3").innerText = "Alemanha"
+            document.getElementById("q4").innerText = "Itália"
+        } else {
+            alert("Não foi")
+        }
+    }
+
+</script>
+</html>
