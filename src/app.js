@@ -24,4 +24,8 @@ app.get('/quiz', (request, response) => {
     response.sendFile(__dirname + '/static/html/quiz.html')
 })
 
+app.get('/Comprar-cartao', (request, response) => {
+    response.sendFile(__dirname + '/static/html/company.html')
+})
+
 app.listen(port)
