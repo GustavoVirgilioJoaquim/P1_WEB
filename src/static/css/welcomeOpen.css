@@ -11,13 +11,19 @@ body{
 }
 
 button{
-    background-color: #007f5f;
     border: 0;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-weight: bold;
     font-size: 19px;
+    background-color: #222;
+    color: white;
+}
+
+#next-menu{
+    margin-top: 20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 4px;
 }
 
 .top-bar{
@@ -36,49 +42,54 @@ button{
 .content{
     width: 100%;
     height: 100vh;
-    padding-top: 14vh;
+    padding-top: 12vh;
     /* display: flex;  */
     justify-content: center; 
     align-items: center; 
 }
 
-.text-question{
+.welcome{
     width: 100%;
     height: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: white; */
 }
 
-#button-next{
-    width: 170px;
-    height: 70px;
-    border-radius: 10px;
-    margin-top: 13vh;
-    background-color: #e36414;   
-}
-
-#button-next:hover{
-    background-color: green;
-    transition-duration: 0.5s;
-}
-
-#price-before{
-    color: red;
-    text-decoration: line-through;
-}
-
-#price-now{
-    color: green;
-    font-size: 40px;
-}
-
-.card{
+.principios{
     width: 100%;
-    height: 30%;
+    height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.img-porta{
+    width: 100%;
+    height: 50px;
+    padding-top: 120px;
+    padding-bottom: 110px;
     font-weight: bold;
     font-size: 20px;
     display: flex;
@@ -86,20 +97,7 @@ button{
     align-items: center;
 }
 
-.desenho-card{
-    width: 280px;
-    height: 150px;
-    display: flex;
-    border: 2px solid linear-gradient(90deg, green, rgb(61, 173, 61));
-    border-radius: 5px;
-    background: linear-gradient(90deg, green, rgb(61, 173, 61));
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-#content-card{
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
+img{
+    width: 200px;
+    height: 280px;
 }

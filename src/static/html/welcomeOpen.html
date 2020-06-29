@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/company.css">
+    <link rel="stylesheet" href="../css/welcomeOpen.css">
 </head>
 <body>
     <div class="container">
@@ -18,34 +18,29 @@
             </div>
         </header>
         <div class="content">
-            <div class="card">
-                <div class="desenho-card">
-                    <p id="content-card">Card Green</p>
-                </div>
+            <div class="welcome">
+                <span id="text">Bem vindo a Open.</span>
             </div>
-            <div class="text-question">
-                <span id="text">De:</span>
+            <div class="principios">
+                <span id="text">Facilita, clareza e agilidade.</span>
             </div>
-            <div class="text-question">
-                <span id="price-before">R$10,00</span>
+            <div class="img-porta">
+                <img src="../imagens/portal.png" alt="Porta">
             </div>
-            <div class="text-question">
-                <span id="text">Por:</span>
+            <div class="slogan">
+                <span id="text">"Abrimos as portas para as facilidades."</span>
             </div>
-            <div class="text-question">
-                <span id="price-now">R$5,00</span>
-            </div>
-            <div class="text-question">
-                <button id="button-next">Comprar</button>
+            <div class="slogan">
+                <button id="next-menu"> > Explorar </button>
             </div>
         </div>
     </div>
 </body>
 <script>    
-    function compra(){
-        window.location.href = "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=388910580-6391e919-cfee-445b-a77b-37d06c90617c"
+    function pageMenu(){
+        window.location.href = "./menu-cards"
     }
-    const buttonCompra = document.querySelector('#button-next')
-    buttonCompra.onclick = compra
+    const buttonMenu = document.querySelector('#next-menu')
+    buttonMenu.onclick = pageMenu
 </script>
 </html>

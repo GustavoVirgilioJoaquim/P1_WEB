@@ -32,4 +32,8 @@ app.get('/menu-cards', (request, response) => {
     response.sendFile(__dirname + '/static/html/menuCards.html')
 })
 
+app.get('/Open', (request, response) => {
+    response.sendFile(__dirname + '/static/html/welcomeOpen.html')
+})
+
 app.listen(port)
