@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #111; */
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.top-bar{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: white;
+    font-weight: bold;
+    background-color: #e36414;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 8vh;
+    /* display: flex;  */
+    justify-content: center; 
+    align-items: center; 
+}
+
+.card{
+    width: 100%;
+    height: 30%;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-content{
+    width: 100%;
+    height: 10%;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desenho-card-silver{
+    width: 260px;
+    height: 130px;
+    display: flex;
+    border: 2px solid linear-gradient(90deg, #777, silver);
+    border-radius: 5px;
+    background: linear-gradient(90deg, #777, silver);
+    justify-content: center;
+    align-items: center;
+}
+
+.desenho-card-black{
+    width: 260px;
+    height: 130px;
+    display: flex;
+    border: 2px solid linear-gradient(90deg, black, #222);
+    border-radius: 5px;
+    background: linear-gradient(90deg, black, #444);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.desenho-card-blue{
+    width: 260px;
+    height: 130px;
+    display: flex;
+    border: 2px solid linear-gradient(90deg, rgb(21, 21, 245), rgb(94, 94, 255));
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(21, 21, 248), rgb(94, 94, 255));
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#content-card{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+}

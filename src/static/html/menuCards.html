@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card - Compra</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/menuCards.css">
+</head>
+<body>
+    <div class="container">
+        <header class="top-bar">
+            <div class="logo">
+                <span id="nome-logo">Open</span>
+            </div>
+        </header>
+        <div class="content">
+            <div class="top-content">
+                <span>Escolha o Card</span>
+            </div>
+            <div class="card">
+                <div class="desenho-card-silver" onclick="pageCompra()">
+                    <p id="content-card">Card Silver</p>
+                    <!-- <p id="content-card">1111 2222 3333 4444</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="desenho-card-blue" onclick="pageCompra()">
+                    <p id="content-card">Card Blue</p>
+                    <!-- <p id="content-card">1111 2222 3333 4444</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="desenho-card-black" onclick="pageCompra()">
+                    <p id="content-card">Card Black</p>
+                    <!-- <p id="content-card">1111 2222 3333 4444</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>    
+    function pageCompra(){
+        window.location.href = "./comprar-cartao"
+    }
+    const a = document.querySelector('.card')
+    a.onclick = pageCompra
+</script>
+</html>
