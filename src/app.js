@@ -29,7 +29,7 @@ app.get('/comprar-cartao', (request, response) => {
 })
 
 app.get('/menu-cards', (request, response) => {
-    response.sendFile(__dirname + '/static/html/company.html')
+    response.sendFile(__dirname + '/static/html/menuCards.html')
 })
 
 app.listen(port)
