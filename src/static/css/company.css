@@ -87,8 +87,8 @@ button{
 }
 
 .desenho-card{
-    width: 20%;
-    height: 70%;
+    width: 280px;
+    height: 150px;
     display: flex;
     border: 2px solid linear-gradient(90deg, #777, silver);
     border-radius: 5px;
