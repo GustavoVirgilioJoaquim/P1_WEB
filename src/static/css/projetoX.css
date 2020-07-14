@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+    color: white;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+button{
+    border: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    background-color: #222;
+    color: white;
+}
+
+#next-menu{
+    margin-top: 20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.top-bar{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: white;
+    font-weight: bold;
+    background-color: #111;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+    /* display: flex;  */
+    justify-content: center; 
+    align-items: center; 
+}
+
+.welcome{
+    width: 100%;
+    height: 40px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principios{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    padding-bottom: 130px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.img-porta{
+    width: 100%;
+    height: 50px;
+    padding-top: 100px;
+    padding-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTADOR */
+
+.contagem{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #111;
+margin-top: 60px;
+}
+
+.numero
+{
+min-width: 20px;
+max-width: 55px;
+font-size: 42px;
+margin: 5px;
+text-align: center;
+border-radius: 5px;
+padding: 5px;
+}
+
+.legenda{
+height: 25px;
+line-height: 10px;
+font-size:19px;
+text-align: center;
+}
+
+.fa {
+    /* padding: 20px; */
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    /* margin: 5px 2px; */
+  }
+
+.fa-instagram {
+    color: white;
+  }

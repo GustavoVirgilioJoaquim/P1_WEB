@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/projetoX.css">
+</head>
+<body>
+    <div class="container">
+        <header class="top-bar">
+            <div class="logo">
+            </div>
+        </header>
+        <div class="content">
+            <div class="welcome">
+                <h1 id="text">Novas portas serão abertas...</h1>
+            </div>
+            <div class="principios">
+                <div class="contagem">
+                    <table><tr><td><div class="numero" id="dia"></div></td></td><td><div class="numero" id="hora"></div></td><td><div class="numero" id="minuto"></div></td><td><div class="numero" id="segundo"></div></td></tr>
+                    <tr style="height:40px"><td><p class="legenda">Dias</p></td><td><p class="legenda">Horas</p></td><td><p class="legenda">Min</p></td><td><p class="legenda">Seg</p></td></tr></table>
+                    </table>
+                </div>
+            </div>
+            <div class="img-porta">
+                <iframe width="460" height="290" src="https://www.youtube.com/embed/F3HPixKxerk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="img-porta">
+                <a href="https://www.instagram.com/gustavo_vj/" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>    
+
+var target_date = new Date("september 7, 2020").getTime();
+var dias, horas, minutos, segundos;
+var regressiva = document.getElementById("regressiva");
+
+setInterval(function () {
+
+    var current_date = new Date().getTime();
+    var segundos_f = (target_date - current_date) / 1000;
+
+    dias = parseInt(segundos_f / 86400);
+    segundos_f = segundos_f % 86400;
+    
+    horas = parseInt(segundos_f / 3600);
+    segundos_f = segundos_f % 3600;
+    
+    minutos = parseInt(segundos_f / 60);
+    segundos = parseInt(segundos_f % 60);
+
+    document.getElementById('dia').innerHTML = dias;
+    document.getElementById('hora').innerHTML = horas;
+    document.getElementById('minuto').innerHTML = minutos;
+    document.getElementById('segundo').innerHTML = segundos;
+
+}, 1000);
+</script>
+</html>
