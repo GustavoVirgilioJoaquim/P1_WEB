@@ -36,4 +36,8 @@ app.get('/Open', (request, response) => {
     response.sendFile(__dirname + '/static/html/projetoX.html')
 })
 
+app.get('/Open', (request, response) => {
+    response.sendFile(__dirname + '/static/html/face.html')
+})
+
 app.listen(port)
